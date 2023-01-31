@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>recursos/salir.png</file>
+        <file>recursos/maquina-de-arcade.png</file>
+        <file>recursos/configuraciones.png</file>
+        <file>recursos/izquierda.jpeg</file>
+        <file>recursos/flecha-hacia-abajo.png</file>
+        <file>recursos/flecha-correcta.png</file>
+        <file>recursos/flecha-arriba.png</file>
+        <file>recursos/fondo.jpeg</file>
+        <file>recursos/opciones.png</file>
+    </qresource>
+</RCC>

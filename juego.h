@@ -44,7 +44,7 @@ private slots:
 
 private:
     Ui::Juego *ui;
-    Circulo *m_circulo;
+    Circulo *m_circulo; //CLASE cIRCULO OBJETO CIRCULO
     void dibujar();
     QImage *miImagen;
     QPainter *mPainter;

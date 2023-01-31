@@ -10,18 +10,18 @@
 
 class Circulo : public QPoint
 {
-    int  anchox; //atributos
-    int anchoy;
-    int radio;
+    int  anchox; //atributos coordenadas x
+    int anchoy;//cooerdenadas y
+    int radio; //ancho
 public: //metodos
     Circulo();
-    Circulo(int posix, int posiy, int _radio);
-    int getRadio() const;
-    void setRadio(int evaluar);
+    Circulo(int posix, int posiy, int _radio);//constructor con parametros
+    int getRadio() const;  //metodo obtener
+    void setRadio(int value);//metodo modificar
     int getAnchoy() const;
-    void setAnchoy(int evaluar);
+    void setAnchoy(int value);
     int getAnchox() const;
-    void setAnchox(int evaluar);
+    void setAnchox(int value);
 };
 
 #endif // CIRCULO_H

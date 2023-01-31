@@ -4,7 +4,7 @@
 #include <QDialog>
 #include <QColorDialog>
 
-namespace Ui {
+namespace Ui {  //interfas de usuario
 class Configuracion;
 }
 
@@ -30,8 +30,8 @@ private slots:
 
 private:
     Ui::Configuracion *ui;
-    QColor m_color;
-    int m_dimension;
+    QColor m_color; //atributos cAMBIAR DE COLOR
+    int m_dimension; //MODIFICAR CIRCULOS
 
     void setWidgetColor();
 };

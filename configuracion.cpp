@@ -18,8 +18,9 @@ Configuracion::~Configuracion()
 void Configuracion::on_btnColor_released() //metodo cambiar color al circulo
 {
 
-}
+setWidgetColor(); //cuando de clic abrir la funcion
 
+}
 void Configuracion::setColor(const QColor &newColor)
 {
     m_color = newColor;
@@ -32,6 +33,8 @@ void Configuracion::setDimension(int newDimension)
 
 void Configuracion::setWidgetColor()
 {
+    m_color = QColorDialog::getColor ( m_color ,this," Color del pincel " ); //pantalla de colores
+
     int r = m_color.red();
     int g = m_color.green();
     int b = m_color.blue();

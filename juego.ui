@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Juego</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="recursos.qrc">
+    <normaloff>:/recursos/maquina-de-arcade.png</normaloff>:/recursos/maquina-de-arcade.png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
@@ -61,12 +65,20 @@
             <property name="text">
              <string>Abajo</string>
             </property>
+            <property name="icon">
+             <iconset resource="recursos.qrc">
+              <normaloff>:/recursos/flecha-hacia-abajo.png</normaloff>:/recursos/flecha-hacia-abajo.png</iconset>
+            </property>
            </widget>
           </item>
           <item row="2" column="0">
            <widget class="QPushButton" name="btnIzqueirda">
             <property name="text">
              <string>Izquierda</string>
+            </property>
+            <property name="icon">
+             <iconset resource="recursos.qrc">
+              <normaloff>:/recursos/izquierda.jpeg</normaloff>:/recursos/izquierda.jpeg</iconset>
             </property>
            </widget>
           </item>
@@ -75,12 +87,20 @@
             <property name="text">
              <string>Derecha</string>
             </property>
+            <property name="icon">
+             <iconset resource="recursos.qrc">
+              <normaloff>:/recursos/flecha-correcta.png</normaloff>:/recursos/flecha-correcta.png</iconset>
+            </property>
            </widget>
           </item>
           <item row="1" column="1">
            <widget class="QPushButton" name="btnArriba">
             <property name="text">
              <string>Arriba</string>
+            </property>
+            <property name="icon">
+             <iconset resource="recursos.qrc">
+              <normaloff>:/recursos/flecha-arriba.png</normaloff>:/recursos/flecha-arriba.png</iconset>
             </property>
            </widget>
           </item>
@@ -115,8 +135,15 @@
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivo">
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
     <property name="title">
      <string>Archivo</string>
+    </property>
+    <property name="icon">
+     <iconset resource="recursos.qrc">
+      <normaloff>:/recursos/opciones.png</normaloff>:/recursos/opciones.png</iconset>
     </property>
     <addaction name="actionConfigraci0n"/>
     <addaction name="separator"/>
@@ -126,16 +153,32 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionConfigraci0n">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/configuraciones.png</normaloff>:/recursos/configuraciones.png</iconset>
+   </property>
    <property name="text">
     <string>Configración</string>
    </property>
   </action>
   <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/salir.png</normaloff>:/recursos/salir.png</iconset>
+   </property>
    <property name="text">
     <string>Salir</string>
    </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>
