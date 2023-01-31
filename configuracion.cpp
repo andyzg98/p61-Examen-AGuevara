@@ -6,7 +6,7 @@ Configuracion::Configuracion(QWidget *parent) :
     ui(new Ui::Configuracion)
 {
     ui->setupUi(this);
-    m_color.setRgb(165,29,45);
+    m_color.setRgb(165,29,45); //a,b,c
     setWidgetColor();
 }
 
@@ -15,7 +15,7 @@ Configuracion::~Configuracion()
     delete ui;
 }
 
-void Configuracion::on_btnColor_released()
+void Configuracion::on_btnColor_released() //metodo cambiar color al circulo
 {
 
 }
@@ -49,3 +49,10 @@ int Configuracion::dimension() const
     return m_dimension;
 }
 
+void Configuracion::on_inDimension_sliderMoved(int posicion)
+{
+    ui->inDimension->value();
+}
+void Configuracion::on_inDimension_sliderReleased(){
+
+}

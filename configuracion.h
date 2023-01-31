@@ -16,7 +16,7 @@ public:
     explicit Configuracion(QWidget *parent = nullptr);
     ~Configuracion();
 
-    const QColor &color() const;
+    const QColor &color() const;//color de objeto
     int dimension() const;
 
     void setColor(const QColor &newColor);
@@ -24,6 +24,9 @@ public:
 
 private slots:
     void on_btnColor_released();
+    void on_inDimension_sliderMoved(int posicion);
+
+    void on_inDimension_sliderReleased();
 
 private:
     Ui::Configuracion *ui;
